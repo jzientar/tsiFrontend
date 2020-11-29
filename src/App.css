@@ -1,0 +1,109 @@
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: 0.2rem 1rem;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-link.active,
+.nav-link:focus {
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(150, 39, 5, 0.788);
+}
+
+nav.sticky {
+  background: rgba(0, 5, 10, 0.733);
+}
+
+#contactanos {
+  background-color: #005285;
+  letter-spacing: 2px;
+}
+
+#contactanos a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  #contactanos {
+    padding-bottom: 50px;
+  }
+  #contactanos .maps iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (min-width: 576px) {
+  #contactanos {
+    padding-bottom: 100px;
+  }
+  #contactanos .maps iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  #contactanos {
+    padding-bottom: 100px;
+  }
+  #contactanos .maps iframe {
+    width: 100%;
+    height: 850px;
+  }
+}
+
+@media (min-width: 992px) {
+  #contactanos {
+    padding-bottom: 50px;
+  }
+  #contactanos .maps iframe {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767.98px){
+  #logo{
+    width:60px;
+    height:60px;
+  }
+}
