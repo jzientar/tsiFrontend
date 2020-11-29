@@ -53,9 +53,7 @@ export class ModalMessage extends React.Component {
                 <div className="col-sm-8">
                   <small className="text-uppercase text-muted">Phone Number</small>
                   <h4>
-                    <a href="'mailto:'+selected.email">
                       {this.props.message.phoneNumber}
-                    </a>
                   </h4>
                 </div>
                 <div className="col-sm-4">
