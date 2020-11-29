@@ -1,30 +1,32 @@
 [
   {
-    "id": 1,
-    "from": "Gary Lewis",
-    "fromAddress": "test@foofoo.com",
+    "idMessage": 1,
+    "fullName": "Gary Lewis",
+    "phoneNumber": "76911382",
+    "email": "test@foofoo.com",
     "subject": "I saw this posting on the board",
-    "dtSent": "Today, 9:18AM",
+    "date": "Today, 9:40AM",
     "read": false,
-    "body": "Hey Mark,<br><br>I saw your post on the message board and I was wondering if you still had that item available. Can you call me if you still do?<br><br>Thanks,<br><b>Gary Lewis</b>"
+    "message": "Hey Mark,<br><br>I saw your post on the message board and I was wondering if you still had that item available. Can you call me if you still do?<br><br>Thanks,<br><b>Gary Lewis</b>"
   },
   {
-    "id": 2,
-    "from": "Bob Sutton",
-    "fromAddress": "test@testdomain.com",
-    "subject": "In Late Today",
-    "dtSent": "Today, 8:54AM",
+    "idMessage": 2,
+    "fullName": "Jorge Zientarski",
+    "phoneNumber": "76910021",
+    "email": "test@foofoo.com",
+    "subject": "Welcome",
+    "date": "Today, 9:40AM",
     "read": false,
-    "body": "Mark,<br>I will be in late today due to an appt.<br>v/r Bob",
-    "attachment": false
+    "message": "Hello,<br><br>I saw your post on the message board and I was wondering if you still had that item available. Can you call me if you still do?<br><br>Thanks,<br><b>Jorge Zientarski</b>"
   },
   {
-    "id": 9,
-    "from": "Philip Corrigan",
-    "fromAddress": "test@testdomain.com",
-    "subject": "Follow-up Appt.",
-    "dtSent": "4 Days Ago",
+    "idMessage": 3,
+    "fullName": "Kevin Flores",
+    "phoneNumber": "989999889",
+    "email": "test@foofoo.com",
+    "subject": "The are the new features",
+    "date": "Today, 9:40AM",
     "read": true,
-    "body": "Hi,<br>Can you please confirm the expense report I submitted for my last trip to SD?<br>Thanks,<br>Tom Grey"
+    "message": "How you doing?,<br><br>I saw your post on the message board and I was wondering if you still had that item available. Can you call me if you still do?<br><br>Thanks,<br><b>Kevin Flores</b>"
   }
 ]
