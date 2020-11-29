@@ -1,5 +1,3 @@
-INBOX
-
 import React, { Component } from "react";
 import { InboxHtml } from "./InboxHtml";
 import ModalCompose from "./ModalCompose";
