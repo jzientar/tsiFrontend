@@ -1,3 +1,5 @@
+INBOX
+
 import React, { Component } from "react";
 import { InboxHtml } from "./InboxHtml";
 import ModalCompose from "./ModalCompose";
@@ -105,7 +107,7 @@ export class Inbox extends Component {
     return (
       <div>
         <InboxHtml parent={this} />
-        <ModalCompose sendTo={this.state.selected.fromAddress} />
+        <ModalCompose sendTo={this.state.selected.email} />
         <ModalMessage ref={this.ModalMessage} message={this.state.selected} />
       </div>
     );
