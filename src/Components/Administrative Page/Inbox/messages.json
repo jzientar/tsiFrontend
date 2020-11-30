@@ -1,7 +1,7 @@
 [
   {
     "idMessage": 1,
-    "fullName": "Gary Lewis",
+    "fullName": "Jorge Zientarski",
     "phoneNumber": "76911382",
     "email": "test@foofoo.com",
     "subject": "I saw this posting on the board",
@@ -11,21 +11,21 @@
   },
   {
     "idMessage": 2,
-    "fullName": "Jorge Zientarski",
+    "fullName": "Kevin Flores",
     "phoneNumber": "76910021",
     "email": "test@foofoo.com",
     "subject": "Welcome",
-    "date": "Today, 9:40AM",
+    "date": "Today, 6:40AM",
     "read": false,
     "message": "Hello,<br><br>I saw your post on the message board and I was wondering if you still had that item available. Can you call me if you still do?<br><br>Thanks,<br><b>Jorge Zientarski</b>"
   },
   {
     "idMessage": 3,
-    "fullName": "Kevin Flores",
+    "fullName": "Ramon Perez",
     "phoneNumber": "989999889",
     "email": "test@foofoo.com",
     "subject": "The are the new features",
-    "date": "Today, 9:40AM",
+    "date": "Today, 10:40AM",
     "read": true,
     "message": "How you doing?,<br><br>I saw your post on the message board and I was wondering if you still had that item available. Can you call me if you still do?<br><br>Thanks,<br><b>Kevin Flores</b>"
   }
