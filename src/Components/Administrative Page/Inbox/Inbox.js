@@ -5,6 +5,7 @@ import ModalMessage from "./ModalMessage";
 import axios from "axios";
 import messages from "./messages.json";
 
+
 export class Inbox extends Component {
   constructor(props) {
     super(props);
@@ -16,15 +17,35 @@ export class Inbox extends Component {
     this.deleteMarked = this.deleteMarked.bind(this);
     this.refreshMessages = this.refreshMessages.bind(this);
     this.deleteMessages = this.deleteMessages.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
     this.ModalMessage = React.createRef();
     this.ModalCompose = React.createRef();
     this.state = {
-      initMessages: messages,
-      messages: messages,
+      items: [],
+      messages: [],
       selected: {},
-      deleted: []
+      deleted: [],
+      isLoaded: false
     };
   }
+  
+  componentDidMount() {
+
+    fetch('https://api.centroparts-bolivia.com/api/Message')
+        .then(res => res.json())
+        .then(json => {
+            this.setState({
+                items: json,
+                messages: json,
+                selected: json,
+                isLoaded: true, 
+            })
+        }).catch((err) => {
+            console.log(err);
+        });
+
+}
+
 
   markRead(idx) {
     /* mark this message as read */
@@ -87,11 +108,12 @@ export class Inbox extends Component {
   }
 
   refreshMessages() {
-    let initMessages = [...this.state.initMessages];
-    this.setState({ messages: initMessages });
+    let items = [...this.state.items];
+    this.setState({ messages: items });
   }
 
   deleteMessages(arr) {
+
     let messages = [...this.state.messages];
     let deleted = [...this.state.deleted];
     for (var i = arr.length - 1; i >= 0; i--) {
@@ -101,15 +123,23 @@ export class Inbox extends Component {
     this.setState({ messages, deleted });
   }
 
-  render() {
-    return (
-      <div>
+render() {
+
+  const { isLoaded, items } = this.state;
+
+  if (!isLoaded)
+      return <div>Loading...</div>;
+
+  return (
+      <div className="App">
         <InboxHtml parent={this} />
         <ModalCompose sendTo={this.state.selected.email} />
         <ModalMessage ref={this.ModalMessage} message={this.state.selected} />
       </div>
-    );
-  }
+  );
+
+}
+
 }
 
 export default Inbox;

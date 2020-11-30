@@ -112,14 +112,7 @@ export const InboxHtml = ({ parent }) => {
                   >
                     <i className="align-middle icon-refresh fas fa-sync" />
                   </button>
-                  <button
-                    type="button"
-                    className="btn btn-outline-secondary mr-sm-1 mr-none"
-                    data-target="#composeModal"
-                    data-toggle="modal"
-                  >
-                    <i className="align-middle icon-pencil fa fa-edit" />
-                  </button>
+                
                 </div>
                 {/* message list */}
                 <ul className="list-group py-2">
